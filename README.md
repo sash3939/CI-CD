@@ -65,7 +65,6 @@
    <img width="682" alt="After_fix" src="https://github.com/user-attachments/assets/68c99597-e606-4d30-ba9f-7b5db8e0a291">
 
 
-
 ## Знакомство с Nexus
 
 ### Основная часть
@@ -80,7 +79,11 @@
    
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 3. Проверьте, что все файлы загрузились успешно.
+
+   <img width="484" alt="Maven downloads" src="https://github.com/user-attachments/assets/b4afffb5-d731-49e6-8b90-c79b0d28fe60">
+
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
+   [maven-metadata](https://github.com/sash3939/CI-CD/blob/main/maven-metadata.xml)
 
 ### Знакомство с Maven
 
