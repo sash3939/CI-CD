@@ -1,0 +1,26 @@
+---
+all:
+  hosts:
+    sonarqube:
+      ansible_name: "ansible"
+      ansible_connection: ssh
+      ansible_host: 89.169.150.153
+      ansible_private_key_file: "/root/.ssh/id_ed25519"
+    nexus:
+      ansible_name: "ansible"
+      ansible_connection: ssh
+      ansible_host: 89.169.152.27
+      ansible_private_key_file: "/root/.ssh/id_ed25519"
+  children:
+    sonarqube:
+      hosts:
+        sonarqube:
+    nexus:
+      hosts:
+        nexus:
+    postgres:
+      hosts:
+        sonarqube:
+  vars:
+    ansible_connection_type: paramiko
+    ansible_user: ansible
