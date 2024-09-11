@@ -36,14 +36,35 @@
 ### Основная часть
 
 1. Создайте новый проект, название произвольное.
+
+   <img width="676" alt="Sonar_project" src="https://github.com/user-attachments/assets/c5756891-4949-4e65-9754-15092109c240">
+
 2. Скачайте пакет sonar-scanner, который вам предлагает скачать SonarQube.
 3. Сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
+
+   <img width="487" alt="PATH" src="https://github.com/user-attachments/assets/c3d34078-efb9-455d-804c-d8a136fc0ec7">
+
 4. Проверьте `sonar-scanner --version`.
+
+   <img width="613" alt="Sonar-scanner version" src="https://github.com/user-attachments/assets/e8918f4c-55db-4046-9738-35c6fa65cd84">
+
 5. Запустите анализатор против кода из директории [example](./example) с дополнительным ключом `-Dsonar.coverage.exclusions=fail.py`.
+
+   <img width="687" alt="Start analyzer" src="https://github.com/user-attachments/assets/d32ac0d3-17cf-402c-8fa8-80a0ea4b1899">
+
 6. Посмотрите результат в интерфейсе.
+
+   <img width="685" alt="Result analyzer" src="https://github.com/user-attachments/assets/99048d48-8280-4dfd-b6b5-9145bab1f6b2">
+
+   <img width="686" alt="Result analyzer Interface" src="https://github.com/user-attachments/assets/b2a2ae97-56b1-43b9-b143-9978e49826ac">
+
 7. Исправьте ошибки, которые он выявил, включая warnings.
 8. Запустите анализатор повторно — проверьте, что QG пройдены успешно.
 9. Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.
+
+   <img width="682" alt="After_fix" src="https://github.com/user-attachments/assets/68c99597-e606-4d30-ba9f-7b5db8e0a291">
+
+
 
 ## Знакомство с Nexus
 
