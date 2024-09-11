@@ -94,15 +94,30 @@
 3. Удалите из `apache-maven-<version>/conf/settings.xml` упоминание о правиле, отвергающем HTTP- соединение — раздел mirrors —> id: my-repository-http-unblocker.
 4. Проверьте `mvn --version`.
 
-
-
+   <img width="659" alt="MVN version" src="https://github.com/user-attachments/assets/57f2a207-157c-42f6-ac0d-33697dd3d2db">
 
 5. Заберите директорию [mvn](./mvn) с pom.
+
+[pom.xml](https://github.com/sash3939/CI-CD/blob/main/pom.xml)
+
+Во-первых нет никакой директории с POM, и чтобы ее получить, нужно проект создать!
+Делается это например так
+mvn archetype:generate -DgroupId=netology -DartifactId=maven_java -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+Только после этого появляется папка с проектом и файлом pom.xml
+
+   <img width="742" alt="Maven package start" src="https://github.com/user-attachments/assets/746ff375-0230-4f42-916e-cf3b5ee68a19">
+
+---
 
 ### Основная часть
 
 1. Поменяйте в `pom.xml` блок с зависимостями под ваш артефакт из первого пункта задания для Nexus (java с версией 8_282).
 2. Запустите команду `mvn package` в директории с `pom.xml`, ожидайте успешного окончания.
-3. Проверьте директорию `~/.m2/repository/`, найдите ваш артефакт.
-4. В ответе пришлите исправленный файл `pom.xml`.
+   <img width="492" alt="maven package" src="https://github.com/user-attachments/assets/49f5a2dd-5be5-4e4b-a44d-a9c3d734d1b7">
 
+3. Проверьте директорию `~/.m2/repository/`, найдите ваш артефакт.
+
+   <img width="325" alt="Jar after mvn package" src="https://github.com/user-attachments/assets/d1e33236-5919-4351-9e19-cc8f65356028">
+
+4. В ответе пришлите исправленный файл `pom.xml`.
+   [pom after package](https://github.com/sash3939/CI-CD/blob/main/pom_after.xml)
